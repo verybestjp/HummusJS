@@ -42,9 +42,8 @@
   "binary": {
     "module_name": "hummus",
     "module_path": "./binding",
-    "remote_path": "./{module_name}/v{version}/{toolset}/",
-    "host": "https://kailash-technology-dev.s3-ap-northeast-1.amazonaws.com",
-    "package_name": "{node_abi}-{platform}-{arch}-{libc}.tar.gz"
+    "host": "https://github.com",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}-{libc}.tar.gz"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
