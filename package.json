@@ -34,7 +34,7 @@
     "node-pre-gyp"
   ],
   "devDependencies": {
-    "aws-sdk": "~2.0.0-rc.15",
+    "aws-sdk": "^2.0.31",
     "chai": "^3.4.0",
     "mocha": "^2.3.3",
     "npm": "^5.8.0"
@@ -43,8 +43,8 @@
     "module_name": "hummus",
     "module_path": "./binding",
     "remote_path": "./{module_name}/v{version}/{toolset}/",
-    "host": "https://hummus.s3-us-west-2.amazonaws.com",
-    "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
+    "host": "https://kailash-technology-dev.s3-ap-northeast-1.amazonaws.com",
+    "package_name": "{node_abi}-{platform}-{arch}-{libc}.tar.gz"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
