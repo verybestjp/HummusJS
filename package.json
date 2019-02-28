@@ -34,17 +34,17 @@
     "node-pre-gyp"
   ],
   "devDependencies": {
-    "aws-sdk": "~2.0.0-rc.15",
+    "aws-sdk": "^2.0.31",
     "chai": "^3.4.0",
     "mocha": "^2.3.3",
     "npm": "^5.8.0"
   },
   "binary": {
     "module_name": "hummus",
-    "module_path": "./binding",
-    "remote_path": "./{module_name}/v{version}/{toolset}/",
-    "host": "https://hummus.s3-us-west-2.amazonaws.com",
-    "package_name": "{node_abi}-{platform}-{arch}-{libc}.tar.gz"
+    "module_path": "./binding", 
+    "host": "https://github.com",
+    "remote_path": "/verybestjp/HummusJS/releases/download/{version}/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}-{libc}.tar.gz"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
