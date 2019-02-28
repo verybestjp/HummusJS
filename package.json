@@ -1,13 +1,13 @@
 {
   "name": "hummus",
-  "version": "1.0.87",
+  "version": "1.0.95",
   "description": "Create, read and modify PDF files and streams",
   "homepage": "http://pdfhummus.com/",
   "license": "Apache-2.0",
   "author": "Gal Kahana <gal.kahana@hotmail.com>",
   "main": "./hummus.js",
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "node-pre-gyp install --fallback-to-build $EXTRA_NODE_PRE_GYP_FLAGS",
     "test": "mocha -R tap ./tests/*.js --timeout 15000"
   },
   "repository": {
@@ -41,7 +41,7 @@
   },
   "binary": {
     "module_name": "hummus",
-    "module_path": "./binding",
+    "module_path": "./binding", 
     "host": "https://github.com",
     "remote_path": "/verybestjp/HummusJS/releases/download/{version}/",
     "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}-{libc}.tar.gz"
